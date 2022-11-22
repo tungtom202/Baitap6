@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "name": "Galaxy Z Fold4, 512 GB",
+        "image": "https://cdn1.otosaigon.com/data-resize/attachments/2510/2510444-d114e8cb00ef1978b3211662b1ee440f.jpg?w=750",
+        "price": 2.000,
+        "owner": "Tocotoco",
+        "ice": [
+            "0%",
+            "30%",
+            "50%",
+            "70%",
+            "100%"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
+        "description": "Tuyển chọn từ 100% lá trà non, trải qua quy trình Hấp kết hợp Sấy để bảo toàn hương vị tự nhiên. Là giải pháp thanh sạch cơ thể tiện lợi cho người trẻ hiện đại"
+    }
+]

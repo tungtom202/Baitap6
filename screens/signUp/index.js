@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { TouchableOpacity, Text, View, Image } from "react-native";
 import MainButton from "../../components/MainButton";
 import MainInput from "../../components/MainInput";
+import { FontAwesome5 } from '@expo/vector-icons';
 export default function SignUpScreen({ navigation }) {
   const [name, setName] = useState("");
   const [email, setemail] = useState("");
@@ -21,6 +22,7 @@ export default function SignUpScreen({ navigation }) {
       createAccount();
     }
   };
+
   const createAccount = async () => {
     let userData = await AsyncStorage.getItem("userData");
     if (userData) {
@@ -52,7 +54,7 @@ export default function SignUpScreen({ navigation }) {
     navigation.goBack();
   };
   return (
-    <View style={{ flex: 1, backgroundColor: "#fff", paddingHorizontal: 12 }}>
+    <View style={{ flex: 1, backgroundColor: "#f4f4f4", paddingHorizontal: 12 }}>
       <View style={{ flexDirection: "row", marginTop: 50 }}>
         <TouchableOpacity
           onPress={onGoBack}
@@ -95,38 +97,93 @@ export default function SignUpScreen({ navigation }) {
             resizeMode: "contain",
             width: 100,
           }}
-          source={require("../../assets/Juice.png")}
+          source={require("../../assets/logocar1.png")}
         />
+
         <Text
           style={{
-            textAlign: "center",
-            fontWeight: "bold",
-            color: "#2FDBBC",
-            fontSize: 25,
+            textAlign: 'center',
+            fontWeight: 'bold',
+            color: '#555',
+            fontSize: 20,
             marginBottom: 50,
+            fontStyle: 'italic',
+            fontWeight: '400'
           }}
         >
-          DrinkApp
+          Classic Car Auto
         </Text>
-        <MainInput
-          title={"Họ và tên"}
-          placeholder={"Nhập họ và tên"}
-          value={name}
-          onChangeText={setName}
-        />
-        <MainInput
-          title={"Email"}
-          placeholder={"Nhập email"}
-          value={email}
-          onChangeText={setemail}
-        />
-        <MainInput
-          placeholder={"Nhập mật khẩu"}
-          title={"Mật khẩu"}
-          secureTextEntry={true}
-          value={password}
-          onChangeText={setpassword}
-        />
+        <View>
+
+          <FontAwesome5 name="heart" size={24} color="black"
+            style={{
+              position: 'absolute',
+              top: 21,
+              //left: 10,
+              zIndex: 5,
+              backgroundColor: '#555',
+              color: '#fff',
+              fontSize: 20,
+              paddingHorizontal: 10,
+              paddingTop: 9,
+              paddingBottom: 9,
+              borderTopLeftRadius: 20,
+              borderBottomLeftRadius: 20
+
+            }} />
+          <MainInput
+            placeholder={"First and last name"}
+            value={name}
+            onChangeText={setName}
+          />
+        </View>
+        <View>
+          <FontAwesome5 name="user" size={24} color="black"
+            style={{
+              position: 'absolute',
+              top: 21,
+              //left: 10,
+              zIndex: 5,
+              backgroundColor: '#555',
+              color: '#fff',
+              fontSize: 20,
+              paddingHorizontal: 10,
+              paddingTop: 9,
+              paddingBottom: 9,
+              borderTopLeftRadius: 20,
+              borderBottomLeftRadius: 20
+
+            }} />
+          <MainInput
+            placeholder={"User Name"}
+            value={email}
+            onChangeText={setemail}
+          />
+        </View>
+        <View>
+          <FontAwesome5 name="key" size={24} color="black"
+            style={{
+              position: 'absolute',
+              top: 21,
+              //left: 10,
+              zIndex: 5,
+              backgroundColor: '#555',
+              color: '#fff',
+              fontSize: 20,
+              paddingHorizontal: 10,
+              paddingTop: 9,
+              paddingBottom: 9,
+              borderTopLeftRadius: 20,
+              borderBottomLeftRadius: 20
+
+            }} />
+          <MainInput
+            placeholder={"Password"}
+            secureTextEntry={true}
+            value={password}
+            onChangeText={setpassword}
+          />
+        </View>
 
         <MainButton
           onPress={onSignUp}

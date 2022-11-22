@@ -18,11 +18,12 @@ export default function MainInput(props) {
       <TextInput
         secureTextEntry={secureTextEntry}
         style={{
-          backgroundColor: "#f4f4f4",
+          backgroundColor: "#ddd",
           paddingVertical: 6,
           borderRadius: 20,
-          paddingHorizontal: 20,
+          paddingHorizontal: 46,
           marginBottom: 14,
+
         }}
         placeholder={placeholder}
         onEndEditing={onEndEditing}

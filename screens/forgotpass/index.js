@@ -17,7 +17,7 @@ export default function ForgotScreen({ navigation }) {
     } else if (password.trim() == "" || !password) {
       alert("Không được để trống mật khẩu !");
     } else {
-        findAccount();
+      findAccount();
     }
   };
   const findAccount = async () => {

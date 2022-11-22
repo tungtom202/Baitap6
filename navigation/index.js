@@ -1,10 +1,12 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import React from "react";
-import ForgotPass from "../screen/forgotpass";
-import LoginScreen from "../screen/login";
-import SignUpScreen from "../screen/signUp";
-import HomeTab from "../screen/home";
+import ForgotPass from "../screens/forgotpass";
+import LoginScreen from "../screens/login";
+import SignUpScreen from "../screens/signUp";
+import HomeTab from "./homeTab";
+import DrinkDetailScreen from '../screens/drinkDetail'
+
 const Stack = createStackNavigator();
 
 function AppNavigation() {
@@ -19,6 +21,7 @@ function AppNavigation() {
         <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
         <Stack.Screen name="ForgotPass" component={ForgotPass} />
         <Stack.Screen name="HomeTab" component={HomeTab} />
+        <Stack.Screen name="DrinkDetailScreen" component={DrinkDetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

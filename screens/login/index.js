@@ -1,6 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { FontAwesome5 } from '@expo/vector-icons';
 import {
   StyleSheet,
   Image,
@@ -38,8 +39,11 @@ export default function LoginScreen({ navigation }) {
             value.matkhau == matkhau
         );
         if (arr.length > 0) {
-          alert('Đăng nhập thành công', arr[0].taikhoan)
+          //alert('Đăng nhập thành công', arr[0].taikhoan)
+          arr[0].taikhoan;
+          //console.log(arr[0]);
           let curUser = arr[0];
+
           AsyncStorage.setItem('curUser', JSON.stringify(curUser));
           navigation.replace('HomeTab');
         } else alert('Tài khoản hoặc mật khẩu không chính xác!');
@@ -71,54 +75,99 @@ export default function LoginScreen({ navigation }) {
             flex: 1,
             justifyContent: 'center',
             paddingHorizontal: 12,
-            backgroundColor: '#fff',
+            backgroundColor: '#f4f4f4',
+
           }}
         >
+
           <Image
             style={{
               alignSelf: 'center',
-              height: 100,
+              height: 120,
               resizeMode: 'contain',
-              width: 100,
+              width: 120,
+
             }}
-            source={require('../../assets/Juice.png')}
+            source={require('../../assets/logocar1.png')}
           />
+
           <Text
             style={{
               textAlign: 'center',
               fontWeight: 'bold',
-              color: '#2FDBBC',
-              fontSize: 25,
+              color: '#555',
+              fontSize: 20,
               marginBottom: 50,
+              fontStyle: 'italic',
+              fontWeight: '400'
             }}
           >
-            DrinkApp
+            Welcome back !
           </Text>
+          <View>
 
-          <MainInput
-            title={'Email'}
-            placeholder={'Nhập email'}
-            value={taikhoan}
-            onChangeText={setemail}
-          />
-          <MainInput
-            placeholder={'Nhập mật khẩu'}
-            title={'Mật khẩu'}
-            value={matkhau}
-            secureTextEntry={true}
-            onChangeText={setpassword}
-          />
+            <FontAwesome5 name="user" size={24} color="black"
+              style={{
+                position: 'absolute',
+                top: 21,
+                //left: 10,
+                zIndex: 5,
+                backgroundColor: '#555',
+                color: '#fff',
+                fontSize: 20,
+                paddingHorizontal: 10,
+                paddingTop: 9,
+                paddingBottom: 9,
+                borderTopLeftRadius: 20,
+                borderBottomLeftRadius: 20
+
+              }} />
+            <MainInput
+              //title={'Email'}
+              placeholder={'User Name'}
+              value={taikhoan}
+              onChangeText={setemail}
+            />
+          </View>
+          <View>
+            <FontAwesome5 name="lock" size={24} color="black"
+              style={{
+                position: 'absolute',
+                top: 21,
+                //left: 10,
+                zIndex: 5,
+                backgroundColor: '#555',
+                color: '#fff',
+                fontSize: 20,
+                paddingHorizontal: 10,
+                paddingTop: 9,
+                paddingBottom: 9,
+                borderTopLeftRadius: 20,
+                borderBottomLeftRadius: 20
+
+              }} />
+            <MainInput
+              placeholder={'Password'}
+              //title={'Mật khẩu'}
+              value={matkhau}
+              secureTextEntry={true}
+              onChangeText={setpassword}
+            />
+
+          </View>
           <MainButton
             style={{ marginTop: 20 }}
             title={'Đăng Nhập'}
             onPress={goToHome}
           />
+          <Text style={{ marginTop: 10, marginLeft: 18, fontStyle: 'italic', color: '#444' }}>Don't have on account?</Text>
           <MainButton
-            style={{ marginTop: 12 }}
+            style={{ marginTop: 6 }}
             title={'Đăng Ký'}
             isSubButton={true}
             onPress={goToSignUp}
           />
+          <Text style={{ textAlign: 'center', marginTop: 40 }}>Forgot Password?</Text>
         </View>
       </TouchableWithoutFeedback>
     </KeyboardAvoidingView>
