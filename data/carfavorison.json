@@ -1,9 +1,9 @@
 [
     {
         "id": 0,
-        "name": "Maserati Levante 2023",
-        "image": "https://dailymuabanxe.net/wp-content/uploads/2021/08/Maserati-Levante_Trofeo.jpg",
-        "price": 60.000,
+        "name": "Porsche 911 Turbo S 2022",
+        "image": "https://xehay.vn/uploads/images/2020/4/1/xehay-911-010420-7.jpg",
+        "price": 800.000,
         "owner": "Anh Quốc",
         "ice": [
             "0%",
@@ -17,14 +17,14 @@
             "Bản 4 chỗ thương gia",
             "Bản 5 chỗ"
         ],
-        "description": "Kiểu dáng phía sau có sự nổi bật của cụm đèn hậu cùng ống xả kép, cùng với đó Levante có thiết kế phía sau khá mềm mại, các đường cong giúp người ta liên tưởng đến các mẫu Coupe thể thao cuốn hút. Không gian nội thất mang đậm phong cách ý với sự cầu kỳ trong từng chi tiết của không gian cabin, phong cách sang trọng nhưng vẫn toát lên sự mạnh mẽ từ các chất liệu hiện đại."
+        "description": "Ông vua của dòng 911 sở hữu khối động cơ Boxer mới với 6 xy lanh, dung tích 3.8 lít và hệ thống turbo kép, sản sinh công suất cực đại 641 mã lực và 800 Nm tại dải vòng tua từ 2500 tới 4500 vòng / phút. Khối máy này “đá cặp” với một hộp số tự động li hợp kép 8 cấp tiêu chuẩn."
     },
     {
         "id": 1,
-        "name": "Jeep Wrangler 2022",
-        "image": "https://giaxeoto.vn/admin/upload/images/resize/640-xe-ban-tai-jeep-gladiator-tai-viet-nam.jpg",
+        "name": "JAGUAR F‑TYPE",
+        "image": "https://i.pinimg.com/originals/7e/fe/fc/7efefcfbec81935095da7ca5a2edfd98.jpg",
         "price": 86.900,
-        "owner": "USA",
+        "owner": "Anh Quốc",
         "ice": [
             "0%",
             "30%",
@@ -33,15 +33,14 @@
             "80%"
         ],
         "size": [
-            "Premium",
-            "Luxury "
+            "F Sport"
         ],
-        "description": "Con số 600 trong tên xe ngụ ý mọi thứ đã cải tiến, ở mức độ cao hơn so với LX 570 trước đây, dù 600 không còn đại diện cho dung tích động cơ như 570 (máy 5.7 V8), vì giờ đây xe dùng động cơ 3.5 V6 tăng áp kép. Những thứ khác đều được thay đổi toàn diện, từ kích thước, công nghệ tới khả năng chống ồn..."
+        "description": "F‑TYPE là mẫu thiết kế mang đậm chất báo gấm Jaguar trong vóc dáng thể thao thuần khiết nhất - tinh gọn và thanh lịch từ mọi góc độ."
     },
     {
         "id": 2,
-        "name": "Ferrari 296 GTB",
-        "image": "https://giaxeoto.vn/admin/upload/images/resize/640-Ferrari-296-GTB-hong-va-duoi-xe.jpg",
+        "name": " RX 350 ",
+        "image": "https://www.lexus.com.vn/content/dam/lexus-v3-blueprint/models/suv/rx/rx-350/my20/overview/lexus-rx350-overview.jpg.jpg",
         "price": 20000,
         "owner": "Japan",
         "ice": [
@@ -52,10 +51,10 @@
             "90%"
         ],
         "size": [
-            "Mui cứng",
-            "Mui trần"
+            "L",
+            "F Sport"
         ],
-        "description": "Ferrari 296 GTB là mẫu siêu xe hybrid mới của hãng xe sang Ý - Ferrari, bổ sung thêm lựa chọn cho khách hàng yêu thích dòng xe Ferrari. Siêu xe Ferrari 296 GTB được định vị là 'đàn em' của Ferrari F8 Tributo; đối thủ cạnh tranh trực tiếp là MacLaren Artura."
+        "description": "Mẫu xe RX 350 chạy bằng động cơ phun xăng trực tiếp V6 3.5 lít cho công suất 295 mã lực và khả năng điều khiển dễ dàng."
     },
     {
         "id": 3,
@@ -112,6 +111,6 @@
             "Sport",
             "HSE"
         ],
-        "description": "Cũng sẽ được ra mắt tại Nhà hát Hoàng gia, phiên bản đặc biệt Range Rover SV mới sẽ mang đến cho khách hàng nhiều lựa chọn hơn nữa để có thể cá nhân hóa một chiếc xe thực sự cá tính khi phiên bản này chính thức phân phối đến thị trường trong năm 2022."
+        "description": "Range Rover 2022 ra mắt tại Việt Nam ngày 26-07-2022. Có 4 cấu hình là: SWB P360 Autobiography, LWB P360 Autobiography, LWB P360 Autobiography 7 chỗ và LWB SV P530 ."
     }
 ]

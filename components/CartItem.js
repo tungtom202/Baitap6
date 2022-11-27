@@ -69,12 +69,12 @@ export default function CartItem(props) {
           <View style={{ flex: 1 }}>
             <Text style={{ fontSize: 11 }}>Price: {item.price} VND</Text>
             <Text style={{ fontSize: 11 }}>Size: {item.size}</Text>
-            <Text style={{ fontSize: 11 }}>Ice: {item.ice}</Text>
+            <Text style={{ fontSize: 11 }}>Trả góp: {item.ice}</Text>
           </View>
           <View style={{ alignItems: "center", flexDirection: "row" }}>
             <TouchableOpacity
               onPress={handleOnRemove}
-              style={{ backgroundColor: "#2FDBBC", borderRadius: 8 }}
+              style={{ backgroundColor: "#ccc", borderRadius: 8 }}
             >
               <Ionicons name="remove" size={24} color="#fff" />
             </TouchableOpacity>
@@ -83,7 +83,7 @@ export default function CartItem(props) {
             </Text>
             <TouchableOpacity
               onPress={handleOnAdd}
-              style={{ backgroundColor: "#2FDBBC", borderRadius: 8 }}
+              style={{ backgroundColor: "#333", borderRadius: 8 }}
             >
               <Ionicons name="add" size={24} color="#fff" />
             </TouchableOpacity>

@@ -28,13 +28,13 @@ function DrinkItem(props) {
           {item?.name}
         </Text>
         <View style={{ flexDirection: 'row' }}>
-          <Text style={{ color: '#2FDBBC', fontWeight: 'bold', flex: 1 }}>
+          <Text style={{ color: '#9F9F9F', fontWeight: 'bold', flex: 1 }}>
             {item?.price} VND
           </Text>
           <View
             style={{
               padding: 2,
-              backgroundColor: '#2FDBBC',
+              backgroundColor: 'gold',
               borderRadius: 8,
               alignItems: 'center',
             }}

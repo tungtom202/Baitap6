@@ -21,23 +21,24 @@
     },
     {
         "id": 1,
-        "name": "Galaxy watch4",
-        "image": "https://sontungauto.vn/wp-content/uploads/2015/12/Mercedes-AMG-G63-7.jpg",
-        "price": 30000,
-        "owner": "Tocotoco",
+        "name": "Lexus LX 600 2022",
+        "image": "https://cdn.baogiaothong.vn/upload/images/2022-1/article_social_image/2022-01-16/img-bgt-2021-img-bgt-2021-img-bgt-2021-2022-lexus-lx-3-1642349190-width1200height630-1642349452-width1200height630-1642349452-width1200height630.jpg",
+        "price": 86.900,
+        "owner": "Trung Đông",
         "ice": [
             "0%",
             "30%",
             "50%",
             "70%",
-            "100%"
+            "80%"
         ],
         "size": [
-            "S",
-            "M",
-            "L"
+            "Premium",
+            "Luxury ",
+            "F Sport Handling",
+            "Ultra Luxury"
         ],
-        "description": "Matcha là bột được nghiền từ búp non của cây trà xanh Tencha – giống trà đặc trưng của Nhật Bản."
+        "description": "Con số 600 trong tên xe ngụ ý mọi thứ đã cải tiến, ở mức độ cao hơn so với LX 570 trước đây, dù 600 không còn đại diện cho dung tích động cơ như 570 (máy 5.7 V8), vì giờ đây xe dùng động cơ 3.5 V6 tăng áp kép. Những thứ khác đều được thay đổi toàn diện, từ kích thước, công nghệ tới khả năng chống ồn..."
     },
     {
         "id": 2,
@@ -61,62 +62,62 @@
     },
     {
         "id": 3,
-        "name": "Galaxy watch5 Golf Editon, 44mm",
-        "image": "https://media.autoweek.nl/m/nxvymzwbxi1p.jpg",
-        "price": 30000,
-        "owner": "Fly Tea",
+        "name": "Ford Ranger 2022",
+        "image": "https://s3.ap-southeast-1.amazonaws.com/kgo.life/images/1637803910_2022fordranger44-1637750148029.jpeg",
+        "price": 965.000,
+        "owner": "Thailand",
         "ice": [
             "0%",
             "30%",
             "50%",
             "70%",
-            "100%"
+            "85%"
         ],
         "size": [
-            "S",
-            "M",
-            "L"
+            "XL",
+            "XLS",
+            "XLT",
+            "Wildtrak"
         ],
-        "description": "Trà sữa bạc hà là một trong số đó, thậm chí đồ uống này còn xuất hiện trong menu của hầu hết các thương hiệu trà sữa nổi tiếng và được khách hàng gọi thường xuyên. "
+        "description": "Ford Ranger thế hệ mới, chiếc xe bán tải Ranger tuyệt vời nhất từ trước đến nay. Mạnh mẽ, thông minh và đa năng, Ranger Thế Hệ Mới hoàn hảo cho cả công việc, gia đình hay tận hưởng cuộc sống. Bởi chiếc xe được trang bị những tính năng và công nghệ tiên tiến nhất, hoàn hảo cho bạn có cơ hội trải nghiệm và sống chất như Ranger. "
     },
     {
         "id": 4,
-        "name": "Galaxy S22 utra, 128GB ",
-        "image": "https://cf-img.autorevo.com/1975-ford-f150-hope-mills-nc-7114451/640x640/2711640-1-revo.jpg?_=1658528108",
-        "price": 30000,
-        "owner": "Fly Tea",
+        "name": "Chevrolet Trax 2022 ",
+        "image": "https://static-images.vnncdn.net/files/publish/2022/10/13/chevrolet-trax-2024-xuat-hien-voi-ngoai-hinh-hien-dai-gia-re-hon-truoc-952a1ae675b34a7db6287dd8b80e6a15.jpg",
+        "price": 602.000,
+        "owner": "Mỹ",
         "ice": [
             "0%",
             "30%",
             "50%",
             "70%",
-            "100%"
+            "80%"
         ],
         "size": [
-            "S",
-            "M",
-            "L"
+            "LT",
+            "LTZ",
+            "Hight country"
         ],
-        "description": "Nước chanh là một loại nước giải khát quen thuộc đối với mọi người. Ngoài những công dụng có lợi cho sức khỏe thì nước chanh cũng có những mặt hạn chế ảnh hưởng đến cơ thể mà chúng ta hay hiểu lầm và mắc phải."
+        "description": "Trax 2022 có ngoại hình dài và rộng hơn nhưng thấp hơn một chút so với thế hệ hiện tại. Cụ thể, mẫu xe này dài hơn 279 mm, rộng hơn 51 mm và thấp hơn 101 mm so với phiên bản tiền nhiệm. Chiều dài cơ sở của xe cũng tăng gần 152 mm và điều này giúp chỗ để chân cho hàng ghế sau được tăng thêm 76 mm."
     },
     {
         "id": 4,
-        "name": "Galaxy S22 utra, 128GB ",
-        "image": "https://bringatrailer.com/wp-content/uploads/2021/05/1967_chevrolet_impala_1624904629dfc1b2cabf6351967_chevrolet_impala_1623575325d565ef66e7dff9f1001fbdb-e3c2-425f-add4-73d679e4c16e-0RpJ9s.jpg?fit=940%2C627",
-        "price": 30000,
-        "owner": "Fly Tea",
+        "name": "BMW Series 730 Li",
+        "image": "https://www.bmw-navnitmotors-bengaluru.in/sites/default/files/2021-04/OUR%20MODELS%20Section%20500x542.jpg",
+        "price": 4.369,
+        "owner": "Đức",
         "ice": [
             "0%",
             "30%",
             "50%",
             "70%",
-            "100%"
+            "80%"
         ],
         "size": [
-            "S",
-            "M",
-            "L"
+            "M Sport",
+            "Pure Excellent"
         ],
-        "description": "Nước chanh là một loại nước giải khát quen thuộc đối với mọi người. Ngoài những công dụng có lợi cho sức khỏe thì nước chanh cũng có những mặt hạn chế ảnh hưởng đến cơ thể mà chúng ta hay hiểu lầm và mắc phải."
+        "description": "BMW 7 Series mới gây ấn tượng ngay từ ánh nhìn đầu tiên với thiết kế tự tin không thỏa hiệp, thể hiện ở phần mũi xe cao hơn 50mm so với trước đây, cùng những đường nét tinh tế nhưng mạnh mẽ trên cản trước và nắp ca-pô. Khe thoát gió được thiết kế thanh thoát và táo bạo. 7 Series được trang bị mâm xe hợp kim với kích thước 19 hoặc 20 inch, hoàn thiện phong cách thể thao hay sang trọng tùy theo từng phiên bản. Đặc biệt, dải đèn LED sắc mỏng nối liền giữa 2 cụm đèn hậu LED 3D giúp đuôi xe của 7 Series thêm sắc sảo và nổi bật."
     }
 ]

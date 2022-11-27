@@ -42,7 +42,7 @@ export default function MyTabBar({ state, descriptors, navigation }) {
           >
             <Image
               style={{
-                tintColor: isFocused ? "#67E5CE" : "#222",
+                tintColor: isFocused ? "gold" : "#222",
                 height: 22,
                 width: 22,
                 resizeMode: "contain",
@@ -55,7 +55,7 @@ export default function MyTabBar({ state, descriptors, navigation }) {
                 height: 2,
                 width: 8,
                 borderRadius: 10,
-                backgroundColor: isFocused ? "#67E5CE" : "transparent",
+                backgroundColor: isFocused ? "gold" : "transparent",
               }}
             />
           </TouchableOpacity>

@@ -59,7 +59,7 @@ export default function CartScreen() {
           style={{
             fontWeight: "bold",
             fontSize: 20,
-            color: "#2FDBBC",
+            color: "#222",
             flex: 1,
           }}
         >
@@ -77,10 +77,10 @@ export default function CartScreen() {
           style={{
             fontWeight: "bold",
             fontSize: 18,
-            color: "#2FDBBC",
+            color: "orange",
           }}
         >
-           {getTotal()} VND
+          {getTotal()} VND
         </Text>
       </View>
       {cartList.length > 0 ? (

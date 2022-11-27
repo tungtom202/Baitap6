@@ -1,11 +1,23 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useEffect, useState } from 'react';
-import { FlatList, ScrollView, StatusBar, Text, View, Image } from 'react-native';
+import { FlatList, ScrollView, StatusBar, Text, View, Image, StyleSheet } from 'react-native';
 import DrinkItem from '../../components/DrinkItem';
 import data from '../../data/drinks.json';
+import data1 from '../../data/cars.json';
+import data2 from '../../data/carfavorison.json';
 import styles from './styles';
 import { FontAwesome5 } from '@expo/vector-icons';
 import TextTicker from 'react-native-text-ticker';
+import Slider from '../../components/Slider';
+
+const images = [
+  'https://di-uploads-pod23.dealerinspire.com/maseratisantamonica/uploads/2022/11/Mas-FALL-WINTER-2022-Hero.jpg',
+  'https://cdn.tgdd.vn/Files/2022/02/14/1415506/redmi_mercedes_1_1280x720-800-resize.jpg',
+  'https://giaxeoto.vn/admin/upload/images/resize/640-Ford-Everest-2023-ra-mat-tai-Viet-Nam.jpg',
+  'https://xehay.vn/uploads/images/2021/6/04/xehay-brabus-01072021-2_result.jpg',
+  'https://i.pinimg.com/originals/b0/0d/0c/b00d0cdbf06fab3b2d8cc6847a014495.jpg'
+]
+
 
 export default function HomeScreen({ navigation }) {
   const [user, setuser] = useState(null);
@@ -53,7 +65,10 @@ export default function HomeScreen({ navigation }) {
             style={{ color: 'yellow' }} />
         </View>
       </View>
-      <View>
+      <View style={style.containerslide}>
+        <Slider images={images} />
+      </View>
+      {/* <View>
         <Image
           style={{
             width: '100%',
@@ -65,7 +80,7 @@ export default function HomeScreen({ navigation }) {
             uri: 'https://fordmienbac.net/wp-content/uploads/2022/03/banner-raptor-ford-long-bien.jpg',
           }}
         />
-      </View>
+      </View> */}
       <View
         style={{
           backgroundColor: '#61dafb',
@@ -92,14 +107,13 @@ export default function HomeScreen({ navigation }) {
           <View>
             <TextTicker
               style={{ fontSize: 18, width: '100%', color: '#fff' }}
-              duration={2000}
+              duration={3000}
               loop
               bounce
               repeatSpacer={50}
               marqueeDelay={1000}
             >
-
-              Hurry up to receive the offer for the first customer
+              Book your car quickly to get the best price. For the first 100 customers.
             </TextTicker>
           </View>
 
@@ -110,6 +124,7 @@ export default function HomeScreen({ navigation }) {
             fontWeight: 'bold',
             fontSize: 10,
             marginTop: 30,
+            
           }}
         >
           SỰ DỤNG CODE NÀY
@@ -138,7 +153,7 @@ export default function HomeScreen({ navigation }) {
           renderItem={renderItem}
         />
         <FlatList
-          data={data}
+          data={data1}
           horizontal
           showsHorizontalScrollIndicator={true}
           keyExtractor={(item, index) => item + index}
@@ -148,7 +163,7 @@ export default function HomeScreen({ navigation }) {
       <View style={styles.sectionContainer}>
         <Text style={styles.title}>Có thể bạn sẽ thích</Text>
         <FlatList
-          data={data}
+          data={data2}
           horizontal
           showsHorizontalScrollIndicator={false}
           keyExtractor={(item, index) => item + index}
@@ -218,3 +233,10 @@ export default function HomeScreen({ navigation }) {
     </ScrollView>
   );
 }
+
+const style = StyleSheet.create({
+  containerslide: {
+    marginTop: 20,
+
+  }
+})

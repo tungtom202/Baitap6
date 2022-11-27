@@ -167,7 +167,7 @@ export default function LoginScreen({ navigation }) {
             isSubButton={true}
             onPress={goToSignUp}
           />
-          <Text style={{ textAlign: 'center', marginTop: 40 }}>Forgot Password?</Text>
+          <Text style={{ textAlign: 'center', marginTop: 20 }}>Forgot Password?</Text>
         </View>
       </TouchableWithoutFeedback>
     </KeyboardAvoidingView>
