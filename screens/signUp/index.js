@@ -4,6 +4,7 @@ import { TouchableOpacity, Text, View, Image } from "react-native";
 import MainButton from "../../components/MainButton";
 import MainInput from "../../components/MainInput";
 import { FontAwesome5 } from '@expo/vector-icons';
+import axios from "axios";
 export default function SignUpScreen({ navigation }) {
   const [name, setName] = useState("");
   const [email, setemail] = useState("");
@@ -19,9 +20,12 @@ export default function SignUpScreen({ navigation }) {
     } else if (password.trim() == "" || !password) {
       alert("Không được để trống mật khẩu !");
     } else {
-      createAccount();
+      axios.post("https://63830cf91ada9475c8f714e4.mockapi.io/dangky", { account: email, password: password, name: name })
+      onGoBack();
+      // createAccount();
     }
   };
+
 
   const createAccount = async () => {
     let userData = await AsyncStorage.getItem("userData");

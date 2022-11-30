@@ -27,16 +27,26 @@ export default function LoginScreen({ navigation }) {
       login();
     }
   };
+  const [userData, setuserData] = useState([])
+  const getAccount = async () => {
+    const res = await axios.get('https://63830cf91ada9475c8f714e4.mockapi.io/dangky');
+    const result = await res.data;
+    setuserData(result)
+  }
+  useEffect(() => {
+    getAccount();
+  }, [])
   const login = async () => {
-    axios.get('https://my-json-server.typicode.com/tungtom202/serverAPI.github.io/db').then(response => {
-      let userData = response.data.NguoiDung
-      console.log(response.data)
+    console.log(userData);
+    axios.get('https://63830cf91ada9475c8f714e4.mockapi.io/dangky').then(response => {
+      // let userData = response.data.Object;
       if (userData) {
         let arr = [...userData];
+        console.log(arr);
         arr = arr.filter(
           (value) =>
-            value.taikhoan.toLocaleLowerCase() == taikhoan.toLocaleLowerCase() &&
-            value.matkhau == matkhau
+            value.account.toLocaleLowerCase() == taikhoan.toLocaleLowerCase() &&
+            value.password == matkhau
         );
         if (arr.length > 0) {
           //alert('Đăng nhập thành công', arr[0].taikhoan)

@@ -59,7 +59,7 @@ export default function ProfileScreen({ navigation }) {
       <View style={{ flex: 1, alignItems: "center", backgroundColor: '#fff' }}>
         <View style={{ backgroundColor: '#FCE2DB', width: '100%', alignItems: 'center', borderTopLeftRadius: 15, borderTopRightRadius: 15 }}>
 
-          <View style={{ position: 'absolute', right: 124, zIndex: 3, marginTop: 20, backgroundColor: '#7FBCD2', padding: 8, borderRadius: 100 }}>
+          <View style={{ position: 'absolute', right: 145, zIndex: 3, marginTop: 20, backgroundColor: '#7FBCD2', padding: 8, borderRadius: 100 }}>
             <FontAwesome5 name="camera" size={18} color="black" />
 
           </View>
