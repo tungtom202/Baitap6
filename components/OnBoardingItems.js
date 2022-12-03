@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
   logo: {
     flex: 0.7,
     marginBottom: 50,
-    justifyContent: 'center',
-    color: '#000'
+    justifyContent: 'center'
+    //color: '#000'
   },
   title_head: {
     color: '#000',

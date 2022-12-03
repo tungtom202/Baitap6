@@ -79,10 +79,10 @@ export default function SignUpScreen({ navigation }) {
         <Text
           style={{
             color: "#000",
-            fontSize: 25,
-            paddingLeft: 20,
+            fontSize: 24,
+            paddingTop: 5,
             fontWeight: "bold",
-            letterSpacing: 5,
+            letterSpacing: 1,
           }}
         >
           Đăng Ký

@@ -59,7 +59,7 @@ export default function ProfileScreen({ navigation }) {
       <View style={{ flex: 1, alignItems: "center", backgroundColor: '#fff' }}>
         <View style={{ backgroundColor: '#FCE2DB', width: '100%', alignItems: 'center', borderTopLeftRadius: 15, borderTopRightRadius: 15 }}>
 
-          <View style={{ position: 'absolute', right: 145, zIndex: 3, marginTop: 20, backgroundColor: '#7FBCD2', padding: 8, borderRadius: 100 }}>
+          <View style={{ position: 'absolute', right: 130, zIndex: 3, marginTop: 20, backgroundColor: '#7FBCD2', padding: 8, borderRadius: 100 }}>
             <FontAwesome5 name="camera" size={18} color="black" />
 
           </View>
@@ -69,8 +69,7 @@ export default function ProfileScreen({ navigation }) {
               width: 128,
               borderRadius: 100,
               backgroundColor: '#fff',
-              alignItems: 'center',
-              justifyContent: 'center',
+              alignSelf: 'center'
 
             }}>
 
@@ -79,8 +78,10 @@ export default function ProfileScreen({ navigation }) {
                   height: 120,
                   width: 120,
                   borderRadius: 100,
+                  alignSelf: 'center',
+                  marginTop: 4
                 }}
-                source={{ uri: "https://i.pravatar.cc/300" }}
+                source={{ uri: "https://th.bing.com/th/id/R.1b9b860628b639d6ea1fd3524941d157?rik=b0NnBbsxzZvJWA&pid=ImgRaw&r=0" }}
               />
             </View>
             <Text

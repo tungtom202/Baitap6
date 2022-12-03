@@ -1,0 +1,117 @@
+[
+    {
+        "id": 0,
+        "name": "Vô lăng Mercedes G63 Carbon",
+        "image": "https://inkythuatso.com/uploads/thumbnails/800/2022/03/anh-tay-cam-vo-lang-dep-1-23-10-28-54.jpg",
+        "price": 800.000,
+        "owner": "Anh Quốc",
+        "ice": [
+            "0%",
+            "30%",
+            "50%",
+            "70%",
+            "90%"
+        ],
+        "size": [
+            "Option",
+            "Bản 4 chỗ thương gia",
+            "Bản 5 chỗ"
+        ],
+        "description": "Vô lăng Mercedes G63 được làm từ chất liệu Carbon siêu nhẹ"
+    },
+    {
+        "id": 1,
+        "name": "Range Rover Autobiography Black Edition LWB",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWqAjXCtx-JxXrgEBeGRovOMm4AfZTFewtdg&usqp=CAU",
+        "price": 86.900,
+        "owner": "Anh Quốc",
+        "ice": [
+            "0%",
+            "30%",
+            "50%",
+            "70%",
+            "80%"
+        ],
+        "size": [
+            "F Sport"
+        ],
+        "description": "Vô lăng xe Rang Rover 2022 FSport được làm từ chất liệu da bò"
+    },
+    {
+        "id": 2,
+        "name": "Vô lăng Rolls-Royce Cullinan ",
+        "image": "https://xehay.vn/uploads/images/2021/11/03/xehay-cullinan-19112021-6_result.jpg",
+        "price": 300,
+        "owner": "Anh Quốc",
+        "ice": [
+            "0%",
+            "30%",
+            "50%",
+            "70%",
+            "90%"
+        ],
+        "size": [
+            "Carbon",
+            "Da cao cấp"
+        ],
+        "description": "Vô lăng Rolls-Royce Cullinan được lựa chọn loại da bò cao cấp, tất cả hoàn toàn thủ công."
+    },
+    {
+        "id": 3,
+        "name": "Vô lăng Porsche Cayenne Coupe",
+        "image": "https://sontungauto.vn/wp-content/uploads/2015/12/Porsche-Cayenne-Coupe-11.jpg",
+        "price": 3700,
+        "owner": "Đức",
+        "ice": [
+            "0%",
+            "30%",
+            "50%",
+            "70%",
+            "85%"
+        ],
+        "size": [
+            "Da cao cấp",
+            "Da lộn"
+        ],
+        "description": "Vô lăng Porsche Cayenne Coupe được là từ chất liệu da lộn pha da cao cấp"
+    },
+    {
+        "id": 4,
+        "name": "Vô lăng Volvo XC60 ",
+        "image": "https://image2.tin247.news/pictures/2022/01/27/yaf1643259679.jpg",
+        "price": 397.800,
+        "owner": "Mỹ",
+        "ice": [
+            "0%",
+            "30%",
+            "50%",
+            "70%",
+            "80%"
+        ],
+        "size": [
+            "DEFENDER 90",
+            "DEFENDER 90 X",
+            "DEFENDER 90 XS EDITION"
+        ],
+        "description": "Vô lăng Volvo XC60 chất liệu da "
+    },
+    {
+        "id": 4,
+        "name": "Vô lăng Ferrari",
+        "image": "https://cartimes.tapchicongthuong.vn/images/22/8/9/sieu_xe_ferrari.jpg",
+        "price": 4.369,
+        "owner": "Đức",
+        "ice": [
+            "0%",
+            "30%",
+            "50%",
+            "70%",
+            "80%"
+        ],
+        "size": [
+            "Sport",
+            "HSE"
+        ],
+        "description": "Vô lăng Ferrari da lộn"
+    }
+]

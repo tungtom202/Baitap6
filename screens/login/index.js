@@ -48,6 +48,7 @@ export default function LoginScreen({ navigation }) {
             value.account.toLocaleLowerCase() == taikhoan.toLocaleLowerCase() &&
             value.password == matkhau
         );
+
         if (arr.length > 0) {
           //alert('Đăng nhập thành công', arr[0].taikhoan)
           arr[0].taikhoan;

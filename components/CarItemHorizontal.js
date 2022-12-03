@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 
-function DrinkItemHorizontal(props) {
+function CarItemHorizontal(props) {
   const { item, navigation } = props;
   const goToDetail = () => {
     if (navigation) {
@@ -58,7 +58,7 @@ function DrinkItemHorizontal(props) {
     </TouchableOpacity>
   );
 }
-export default DrinkItemHorizontal;
+export default CarItemHorizontal;
 const styles = StyleSheet.create({
   imageStyle: {
     width: 100,

@@ -5,7 +5,7 @@ import ForgotPass from "../screens/forgotpass";
 import LoginScreen from "../screens/login";
 import SignUpScreen from "../screens/signUp";
 import HomeTab from "./homeTab";
-import DrinkDetailScreen from '../screens/drinkDetail'
+import DrinkDetailScreen from '../screens/carDetail'
 
 import OnBoarding from '../screens/screenslide/OnBoarding';
 import LandingScreen from '../screens/screenslide/LandingScreen';

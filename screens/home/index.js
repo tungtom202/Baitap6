@@ -1,14 +1,16 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useEffect, useState } from 'react';
 import { FlatList, ScrollView, StatusBar, Text, View, Image, StyleSheet } from 'react-native';
-import DrinkItem from '../../components/DrinkItem';
-import data from '../../data/drinks.json';
+import DrinkItem from '../../components/AutoCarItem';
+import data from '../../data/autocar.json';
 import data1 from '../../data/cars.json';
 import data2 from '../../data/carfavorison.json';
+import data3 from '../../data/accesory.json';
 import styles from './styles';
 import { FontAwesome5 } from '@expo/vector-icons';
 import TextTicker from 'react-native-text-ticker';
 import Slider from '../../components/Slider';
+
 
 const images = [
   'https://di-uploads-pod23.dealerinspire.com/maseratisantamonica/uploads/2022/11/Mas-FALL-WINTER-2022-Hero.jpg',
@@ -164,6 +166,17 @@ export default function HomeScreen({ navigation }) {
         <Text style={styles.title}>Có thể bạn sẽ thích</Text>
         <FlatList
           data={data2}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          keyExtractor={(item, index) => item + index}
+          renderItem={renderItem}
+        />
+      </View>
+
+      <View style={styles.sectionContainer}>
+        <Text style={styles.title}>Phụ kiện</Text>
+        <FlatList
+          data={data3}
           horizontal
           showsHorizontalScrollIndicator={false}
           keyExtractor={(item, index) => item + index}

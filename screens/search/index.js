@@ -8,9 +8,14 @@ import {
   TouchableOpacity,
   FlatList,
 } from "react-native";
-import DrinkItemHorizontal from "../../components/DrinkItemHorizontal";
+import CarItemHorizontal from "../../components/CarItemHorizontal";
 import MainInput from "../../components/MainInput";
-import drinkData from "../../data/drinks.json";
+import Data from "../../data/autocar.json";
+import Data1 from '../../data/cars.json';
+import Data2 from '../../data/carfavorison.json';
+import Data3 from '../../data/accesory.json';
+
+
 export default function SearchScreen({ navigation }) {
   const [textSearch, settextSearch] = useState("");
   const categories = [
@@ -22,11 +27,20 @@ export default function SearchScreen({ navigation }) {
     "Toyota",
   ];
   const renderResult = () => {
-    const data = drinkData.filter((value) =>
+    const data = Data.filter((value) =>
+      value.name.toLocaleLowerCase().includes(textSearch.toLocaleLowerCase())
+    );
+    const data1 = Data1.filter((value) =>
+      value.name.toLocaleLowerCase().includes(textSearch.toLocaleLowerCase())
+    );
+    const data2 = Data2.filter((value) =>
+      value.name.toLocaleLowerCase().includes(textSearch.toLocaleLowerCase())
+    );
+    const data3 = Data3.filter((value) =>
       value.name.toLocaleLowerCase().includes(textSearch.toLocaleLowerCase())
     );
     const renderItem = ({ item, index }) => (
-      <DrinkItemHorizontal item={item} navigation={navigation} />
+      <CarItemHorizontal item={item} navigation={navigation} />
     );
     return (
       <View style={{ flex: 1, flexDirection: "column" }}>
@@ -35,6 +49,24 @@ export default function SearchScreen({ navigation }) {
         </Text>
         <FlatList
           data={data}
+          keyExtractor={(item, index) => item + index}
+          renderItem={renderItem}
+        />
+
+        <FlatList
+          data={data1}
+          keyExtractor={(item, index) => item + index}
+          renderItem={renderItem}
+        />
+
+        <FlatList
+          data={data2}
+          keyExtractor={(item, index) => item + index}
+          renderItem={renderItem}
+        />
+
+        <FlatList
+          data={data3}
           keyExtractor={(item, index) => item + index}
           renderItem={renderItem}
         />
