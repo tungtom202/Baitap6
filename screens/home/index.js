@@ -83,6 +83,7 @@ export default function HomeScreen({ navigation }) {
           }}
         />
       </View> */}
+
       <View
         style={{
           backgroundColor: '#61dafb',
@@ -109,13 +110,14 @@ export default function HomeScreen({ navigation }) {
           <View>
             <TextTicker
               style={{ fontSize: 18, width: '100%', color: '#fff' }}
-              duration={3000}
+              duration={2000}
               loop
               bounce
+              shouldAnimateTreshold={40}
               repeatSpacer={50}
               marqueeDelay={1000}
             >
-              Book your car quickly to get the best price. For the first 100 customers.
+              Book your car quickly to get the best price.
             </TextTicker>
           </View>
 
